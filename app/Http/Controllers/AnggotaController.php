@@ -8,7 +8,8 @@ use Illuminate\Http\Request;
 
 
 use App\Anggota;
-
+use Illuminate\Support\Facades\Redirect;
+use SebastianBergmann\Environment\Console;
 
 class AnggotaController extends Controller
 
@@ -155,13 +156,7 @@ public function show($id)
 
 
 public function edit($id)
-
-
 {
-
-
-//
-
 
 }
 
@@ -218,13 +213,9 @@ public function update(Request $request, $id)
 
 
 public function destroy($id)
-
-
 {
-
-
-//
-
+    Anggota::destroy($id);
+    return Redirect('anggota')->with('msg','Data Berhasil di Hapus');
 
 }
 

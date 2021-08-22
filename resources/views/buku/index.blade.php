@@ -114,14 +114,7 @@
 
 <td>
 
-
-<a href="buku/edit/{{ $buku->id_buku }}"
-
-
-                            class="badge badge-primary">Edit</a>
-
-
-<a href="buku/destroy/{{ $buku->id_buku }}"
+<a href="buku/{{ $buku->id_buku }}"
 
 
                             class="badge badge-danger">Hapus</a>

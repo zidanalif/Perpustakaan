@@ -16,7 +16,7 @@
 <h1 class="display-6">Tambah Kategori Buku</h1>
 
 
-<hr class="my-4">     
+<hr class="my-4">
 
 
 <form action="/kategori" method="POST">
@@ -31,10 +31,10 @@
 <label for="deskripsi">Deskripsi</label>
 
 
-<input type="text" class="form-control" id="deskripsi" 
+<input type="text" class="form-control" id="deskripsi"
 
 
-                    name="deskripsi" placeholder="Deskripsi" 
+                    name="deskripsi" placeholder="Deskripsi"
 
 
                     value="{{ old('deskripsi') }}">

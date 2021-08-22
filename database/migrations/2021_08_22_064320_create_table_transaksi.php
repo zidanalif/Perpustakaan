@@ -18,7 +18,7 @@ class CreateTableTransaksi extends Migration
             $table->integer('id_anggota');
             $table->integer('id_buku');
             $table->date('tgl_pinjam');
-            $table->date('tgl_kembali');
+            $table->date('tgl_kembali')->nullable();
             $table->timestamps();
         });
     }

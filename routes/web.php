@@ -40,12 +40,19 @@ return view('index');
 });
 
 
-Route::resource('anggota','AnggotaController');
+Route::get('anggota','AnggotaController@index');
+Route::get('anggota/create',"AnggotaController@create");
+Route::get('anggota/{id_anggota}','AnggotaController@destroy');
+Route::resource('anggota', 'AnggotaController');
 
-
+Route::get('kategori','KategoriController@index');
+Route::get('kategori/create',"KategoriController@create");
+Route::get('kategori/{id_kategori}','KategoriController@destroy');
 Route::resource('kategori','KategoriController');
 
-
+Route::get('buku','BukuController@index');
+Route::get('buku/create',"BukuController@create");
+Route::get('buku/{id_buku}','BukuController@destroy');
 Route::resource('buku','BukuController');
 
 

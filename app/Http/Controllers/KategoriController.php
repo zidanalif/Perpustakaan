@@ -228,7 +228,8 @@ public function destroy($id)
 
 {
 
-
+    Kategori::destroy($id);
+    return Redirect('kategori')->with('msg','Data Berhasil di Hapus');
 //
 
 

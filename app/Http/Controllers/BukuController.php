@@ -289,7 +289,8 @@ public function destroy($id)
 
 {
 
-
+    Buku::destroy($id);
+    return Redirect('buku')->with('msg','Data Berhasil di Hapus');
 //
 
 

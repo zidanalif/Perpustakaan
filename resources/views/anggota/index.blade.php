@@ -119,13 +119,7 @@ Tambah Anggota</a>
 
 
 <td>
-
-
-<a href="" class="badge badge-primary">Edit</a>
-
-
-<a href="" class="badge badge-danger">Hapus</a>
-
+<a href="anggota/{{$ang->id_anggota}}" data-method="delete" rel="nofollow" data-confirm="Yakin ingin menghapus data?" class="badge badge-danger">Hapus</a>
 
 </td>
 

@@ -1,7 +1,7 @@
 @extends('layout.main')
 
 
-@section('title', 'Laravel - SI Perpustakaan')
+@section('title', 'Perpustakaan')
 
 
 @section('content')
@@ -16,7 +16,7 @@
 @if(session('msg'))
 
 
-<div class="alert alert-success alert-dismissible fade show mt-2" 
+<div class="alert alert-success alert-dismissible fade show mt-2"
 
 
             role="alert">
@@ -25,7 +25,7 @@
 {{session('msg')}}
 
 
-<button type="button" class="close" data-dismiss="alert" 
+<button type="button" class="close" data-dismiss="alert"
 
 
                  aria-label="Close">
@@ -46,13 +46,13 @@
 <h1 class="display-6">Kategori Buku</h1>
 
 
-<hr class="my-4">     
+<hr class="my-4">
 
 
 <a href="kategori/create" class="btn btn-primary mb-1">
 
 
-Tambah Kategori Buku</a>       
+Tambah Kategori Buku</a>
 
 
 <table class="table">
@@ -97,10 +97,7 @@ Tambah Kategori Buku</a>
 <td>
 
 
-<a href="" class="badge badge-primary">Edit</a>
-
-
-<a href="" class="badge badge-danger">Hapus</a>
+<a href="kategori/{{$kat->kategori}}" class="badge badge-danger">Hapus</a>
 
 
 </td>
