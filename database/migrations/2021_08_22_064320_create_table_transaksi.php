@@ -15,6 +15,10 @@ class CreateTableTransaksi extends Migration
     {
         Schema::create('table_transaksi', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('id_anggota');
+            $table->integer('id_buku');
+            $table->date('tgl_pinjam');
+            $table->date('tgl_kembali');
             $table->timestamps();
         });
     }
